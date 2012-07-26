@@ -391,11 +391,10 @@ var rightfun = function  () {
                     
                 });
 
-                //intoolbox(thatblock);
                 reallocatewidths($selectedrow);
                 deleteleft($selectedrow);
-
-
+                intoolbox(thatblock);
+                refresh();leftfun();
             });
 }
 var leftfun = function  () {
@@ -406,7 +405,6 @@ var leftfun = function  () {
                     thatnumber = '#'+thatnumber;
                     var thatblock = $(thatnumber);//cache
                     var $selectedrow = thatblock.parent();//cache
-                    console.log(thatblock);
 
                     data_width  = thatblock.attr('data-width');
                     if (data_width!==1) 
@@ -432,9 +430,9 @@ var leftfun = function  () {
                         
                     });
 
-                    //intoolbox(thatblock);
                     reallocatewidths($selectedrow);
                     deleteleft($selectedrow);
+                    intoolbox(thatblock);
 
                     
                 });
@@ -447,7 +445,6 @@ var removefun = function  () {
                     var thatnumber = $(this).siblings('.blockinfo').attr('data-id');
                     thatnumber = '#'+thatnumber;
                     var thatblock = $(thatnumber);//cache
-                    console.log(thatblock);
                     var $selectedrow = thatblock.parent();
                     data_width = parseInt(thatblock.attr('data-width'));
                     var data_divide = parseInt($selectedrow.attr('data-divide'));
@@ -597,11 +594,11 @@ var subcolfun = function  () {
 
         //console.log('called');
         
-         $selectedrow.children('.dynamicblock').each(function(){
+         $selectedrow.find('.dynamicblock').each(function(){
 
             data_width = parseInt($(this).attr('data-width'));
             if (data_width===1) {
-                $(this).find('.left').slideUp();
+                $(this).find('.left').hide();
             }
 
         });
