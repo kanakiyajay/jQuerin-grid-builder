@@ -3,17 +3,12 @@
     <title>jQuerin Grid Builder</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" href="builder/builder.css">
-<script type="text/javascript" src="builder/apprise-1.5.full.js"></script>
-<link rel="stylesheet" href="builder/apprise.css" type="text/css" />
 <style type="text/css">
 
 </style>
-    <script type="text/javascript" src="builder/shCore.js"></script>
-    <script type="text/javascript" src="builder/shBrushCss.js"></script>
-    <script type="text/javascript" src="builder/shBrushXml.js"></script>
-    <link type="text/css" rel="stylesheet" href="builder/shCoreDefault.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+<!--
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-33060097-1']);
@@ -24,57 +19,112 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
+</script>-->
 </head>
-<body>
-                <div class="buttoner">
+<body>         
+                <div> 
 
-                    <button id="addrow">Row</button>
+                    <ul id="header">
+                        <li>
+                            <a target="_blank" href="http://jquer.in">
+                                <p class="banner">jQuerin Grid Builder</p>
+                                <div>Built By Jay Kanakiya</div>
+                            </a>                            
+                        </li>
+                        <li>
+                            <a href="">
+                             <p class="banner">
+                                <img src="builder/grid.jpg" alt="">
+                            </p>
+                            <div>
+                                Based on Responsive Grid System
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="banner">
+                                    <img src="builder/howtouse.png" alt="">
+                                </p>
+                                <div>
+                                    How to use?
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="banner">
+                                <img src="builder/github.png" alt="">
+                                </p>  
+                                <div>
+                                    Fork me on GitHub
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="banner">
+                                <img src="builder/apple.png" alt="">
+                                </p>
+                                <div>
+                                    Help my Buy a MAC
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <p class="banner">
+                                <img src="builder/share.jpg" alt="">
+                            </p>
+                                <div>
+                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Make way for the awesome grid builder" data-via="techiejayk" data-size="large">Tweet</a>
+                        <a href="https://twitter.com/techiejayk" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @techiejayk</a>
+                            </div>
+                        </li>
+                        <li id="codebutton">
+                            <p class="banner">
+                                <img src="builder/generate.jpg" alt="">
+                            </p>
+                            <div>
+                                Generate Code
+                            </div>
+                        </li>
+                    </ul>
+                
+                </div>
+                <!--
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>              
+                -->
+                <div id="toolbox">
                     
                 </div>
-                <div class="buttoner" id="theblock">
-                        
-                    <button id="addblock">Block</button>
+                <div id="dynamicwrapper">
+                    <div id="dynamic">
                     
                 </div>
-               
-                <div class="buttoner" id="thecode">
-                        
-                    <button id="codebutton">Generate Code</button>
-                </div>
-
-                <button id="reloadpage">Start Over</button>
-
-                <div id="header">
                     
-
-                    <a target="_blank" href="http://jquer.in"><img src="builder/logo.png" alt="jquerin-logo" /></a>
-                <div>
-                    <h5>    
-                        <ul>                            
-                            <li>First Add Rows.</li>
-                            <li>Then add its blocks.</li>
-                            <li>Zoom out if blocks dont align. </li>
-                            <li>Click on text to edit</li>
-                            <li>Generate the code and Share</li>
-                        </ul>
-                    </h5>
-                    <div style="padding-bottom:10px;">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Make way for the awesome grid builder" data-via="techiejayk" data-size="large">Tweet</a>
-                        <a href="https://twitter.com/techiejayk" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @techiejayk</a>
+                <div class="buttoner" id="buttonerrow">
+                    <div class="wrapperbutton" id="addrow">
+                        <p style="background:url(builder/plus.png) no-repeat;"></p>
+                        <div>Add Row</div>
                     </div>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <div class="wrapperbutton" id="deleterow">
+                        <p style="background:url(builder/minus.png) no-repeat;"></p>
+                        <div>Delete Row</div>
+                    </div>
                 </div>
                 </div>
-                <div id="dynamic">
-
-                </div>
-
-            
 
             <div id="generatedcode">
-                <h1>Copy this html code in your favourite code editor</h1><pre name="code" id="thefinalhtmlcode" class="brush: html;"></pre>
-                <h1>Save in the same directory as style.css</h1><pre id="thefinalcsscode" name="code" class="brush: css;"></pre>
+                <h1>Copy this html code in your favourite code editor</h1>
+                <div id="modalclose"></div><pre name="code" id="thefinalhtmlcode" class="htmlCode"></pre>
+                <h1>Save in the same directory as style.css</h1><pre id="thefinalcsscode" name="code" class="cssCode"></pre>
+                <a href="http://learn.shayhowe.com/html-css/"><div id="understand" class="later">
+                        Dont know where to start learning Html&css?
+                    </div></a>
+                <a href="http://jquer.in"><div id="jquerin" class="later">
+                        Wondering which jquery plugins to use?
+                        Visit the unofficial jquery plugins page jQuerin
+                    </div></a>
             </div>
             <div class="fullyhidden">
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -113,8 +163,552 @@ audio, video {margin: 0;padding: 0;border: 0outline: 0;font-size: 100%;vertical-
 <script type="text/javascript" src="builder/jquery.min.js"></script>
 <script type="text/javascript" src="builder/jquery-ui.min.js"></script>
 <script type="text/javascript" src="builder/jquery.editinplace.js"></script>
+<script type="text/javascript" src="builder/jquery.snippet.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){apprise('<iframe width="480" height="360" src="http://www.youtube.com/embed/G02Xbi5gi3k" frameborder="0" allowfullscreen></iframe>',{textOk:"Skip Video"});$(".fullyhidden").hide();var a=$(this).width()-16;var b=[];var c=1;var d=0;var e=[];var f=$(this).height();var g=[];var h=[];var i=[];var j=[];var k=[];var l=[];var m="";var n=$(".fullyhidden").first();var o=n.next().html().toString();var p=$("#footerarea").html().toString();var q=$("#resetcss").html().toString();var r="";var s="";var t="";var u="";var v="";$("#addrow").on("click",function(){$("#addblock").slideDown();f=f+300;if(c!==1){b.push(d%10-1)}var a='<div class="dynamicrow ui-widget-content" id="rownumber'+c+'"><p>Height : <span>300</span>px</p></div>';$(a).appendTo($("#dynamic"));$(".dynamicrow").resizable({maxHeight:600,minHeight:10,resize:function(a,b){b.size.width=b.originalSize.width;$(this).children("p").children("span").text(Math.round(b.size.height)+1);$("#showtheheight").text(Math.round(b.size.height)+1)},stop:function(a,b){var c=Math.round(b.size.height);$(this).children(".dynamicblock").animate({height:c},500)}});d=c*10+1;c=c+1});$("#addblock").on("click",function(){var a='<div class="dynamicblock" id="blocknumber'+d+'"><p><span>100</span>%</p><div class="blockinfo">#<span class="editblockid" data-id="">ID</span><br/>.<span class="editblockclass" data-class="">Class</span><br/>//<span class="editblockcomment" data-comment="">Comment</span></div></div>';var b="#rownumber"+(c-1);var e=$(b).css("height");$(a).appendTo($(b));$("#codebutton").slideDown();var f="rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";blockwidth=100/(d%10)+"%";var g="#blocknumber"+d;var h=$(b).children(".dynamicblock");$(g).css("background-color",f);$(b).children(".dynamicblock").css("height",e);$(b).children(".dynamicblock").css("width",blockwidth);var i=Math.round(100/(d%10)*100)/100;h.children("p").children("span").text(i);d=d+1;$(".editblockid").editInPlace({callback:function(a,b,c,d,e){$(this).attr("data-id",b);return b}});$(".editblockclass").editInPlace({callback:function(a,b,c,d,e){$(this).attr("data-class",b);return b}});$(".editblockcomment").editInPlace({callback:function(a,b,c,d,e){$(this).attr("data-comment",b);return b}})});$("#codebutton").on("click",function(){$("#generatedcode").show();$("#reloadpage").slideDown();$("#reloadpage").on("click",function(){location.reload()});b.push(d%10-1);t=t+"\n/*These are all the widths of elements*/\n";v=v+"\n\n/*Heights and background-color*/\n";var a="";var k="";var l="";var n="";var p="";for(var w=1;w<c;w++){a="#rownumber"+w;e.push($(a).height());m=m+' <div id="'+g[w-1]+'"class="row '+h[w-1]+'">\n';if(typeof i[w-1]!=="undefined"&&i[w-1]!==""){m=m+"<!--"+i[w-1]+"-->"}for(var x=0;x<b[w-1];x++){n=x;n=n+1;k="#blocknumber"+w+n;p=$(k).children(".blockinfo");k=p.children(".editblockid").attr("data-id");l=p.children(".editblockclass").attr("data-class");theblockcomment=p.children(".editblockcomment").attr("data-comment");r='\n       <div id="'+k+'" class="col span_1_of_'+b[w-1]+" "+l+'">\n';if(typeof theblockcomment!=="undefined"&&theblockcomment!==""){r=r+"     <!--"+theblockcomment+"-->"}m=m+r+"\n       </div>"}m=m+"\n </div>\n";var y="rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";if(typeof j[w-1]!=="undefined"&&j[w-1]!==""){v=v+"\n#"+j[w-1]+"{\nbackground-color:"+y+";}"}if(typeof g[w-1]!=="undefined"&&g[w-1]!==""){v=v+"\n\n#"+g[w-1]+"{\nbackground-color:"+y+";}"}v=v+"\n.row:nth-of-type("+w+"){\n    height:"+Math.round(e[w-1]+1)+"px;\n}\n";v=v+"\n\n.col:nth-child("+w+"){\n  background-color:"+y+";}\n";if(b[w-1]===2){t=t+"\n.span_2_of_2 { width: 100%;}\n.span_1_of_2 {   width: 50%;}";u=u+"\n.span_2_of_2 { width: 100%; }\n.span_1_of_2 {  width: 100%; }"}if(b[w-1]===3){t=t+"\n.span_1_of_3 { width: 33.333333%;}";u=u+"\n.span_1_of_3 {width: 100%;}"}if(b[w-1]===4){t=t+"\n.span_1_of_4 { width: 25%; }";u=u+"\n.span_1_of_4 {width: 100%; }"}if(b[w-1]===5){t=t+"\n.span_1_of_5 {width: 20%;}\n";u=u+"\n.span_1_of_5 {width: 100%; }"}if(b[w-1]===6){t=t+"\n.span_1_of_6 {width: 16.66666%;}";u=u+"\n.span_1_of_6 { width: 100%; }"}if(b[w-1]===7){t=t+"\n.span_1_of_7 {width: 14.2857%;}";u=u+"\n.span_1_of_7 {width: 100%;}"}if(b[w-1]===8){t=t+"\n.span_1_of_8 { width: 12.5%; }";u=u+"\n.span_1_of_8 { width: 100%; }}"}}s='<!--Built with jQuerin Grid Builder-->\n<!doctype html>\n<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->\n<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->\n<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->\n<head>\n<meta charset="utf-8">\n<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">\n<title></title>\n<meta http-equiv="cleartype" content="on">\n<meta name="description" content="">\n<meta name="viewport" content="width=device-width">\n<meta name="HandheldFriendly" content="True">\n<meta name="MobileOptimized" content="320">\n<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">\n<link rel="stylesheet" href="style.css">\n</head>\n<body>\n'+o+m+"\n</body>\n</html>";s=s.replace(/undefined/g,"");s=s.replace(/id=""/g,"");$("#thefinalhtmlcode").text(s);var z=q+t+v+"\n/*Make it responsive dude*/\n\n@media only screen and (max-width: 480px) {"+u+"}";$("#thefinalcsscode").text(z);SyntaxHighlighter.highlight();window.scroll(0,f);SyntaxHighlighter.all()})})
+
+$(document).ready(function () {
+    //THis is only for the heaeder
+    $(".banner").hover(
+      function () {
+        $(this).animate({'margin-top': '-20%' });
+      }, 
+      function () {
+        $(this).delay(300).animate({'margin-top': 0 });
+      }
+    );
+    //apprise('<iframe width="480" height="360" src="http://www.youtube.com/embed/G02Xbi5gi3k" //frameborder="0" allowfullscreen></iframe>',{'textOk'    :  'Skip Video'});
+    $('.fullyhidden').hide();
+
+    //Global Variables
+    //These are for live manipulation
+    var mainwidth = $(this).width() //-16;
+    var rownumber;
+    var data_divide;
+    var data_width;
+    var alltheblocks;
+    var dividewidth;
+    var blockwidth;
+    var universalid=1;
+    var $beforeselected=$('.fullyhidden');
+    var remove = $('.remove');
+    var left = $('.left');
+    var right = $('.right');
+    var addsubcol = $('.addsubcol');
+    var addsubrow = $('.addsubrow');
+    //These are for the html code to be generated
+    var awesomecontent = '';
+    var thehidden = $('.fullyhidden').first();
+    var headerarea = thehidden.next().html().toString();
+    var footerarea = $('#footerarea').html().toString();
+    var resetcss = $('#resetcss').html().toString();
+    var block_ka_html = '';
+    var fullhtmlcode = '';
+    var awesomecss = '';
+    var mediaqueries = '';
+    var heights = '/*Heights*/';
+    var percent='';
+    var subrowobject='';
+    var datadividesub='';
+    var widtharray = [];
+
+    //On adding a row
+    $('#addrow').on("click", function () {
+        universalid = universalid +1;
+        var blankrow = '<div class="dynamicrow ui-widget-content" data-divide="0" id="' + universalid + '"><p>Height : <span>300</span>px</p><div class="fixedblockoptions" ><b>Row</b><div class="blockinfo" data-id="'+universalid+'">#<span class="editblockid" data-id="">ID</span><br/>.<span class="editblockclass" data-class="">Class</span><br/>//<span class="editblockcomment" data-comment="">Comment</span></div></div><div class="theblock"><button class="addblock"><br>C<br>O<br>L</button></div></div>';//row_ka_html
+
+        $('#deleterow').show();
+        var blankrowkaid = '#'+universalid;
+        $(blankrow).appendTo($('#dynamic'));
+        intoolbox($(blankrowkaid));//for editing
+
+
+        $(".addblock").unbind('click');//Still not sure why?
+        $('.addblock').click(function () {
+            universalid=universalid+1;
+            //console.log(rownumber);
+            var blankblock = '<div class="dynamicblock" data-width="1" data-height="0" id="'+universalid+'"><div class="fixedblockoptions" ><b>Column</b><div class="blockinfo" data-id="'+universalid+'">#<span class="editblockid" data-id="">ID</span><br/>.<span class="editblockclass" data-class="">Class</span><br/>//<span class="editblockcomment" data-comment="">Comment</span></div><div class="right"><p>Increase Width</p></div><div class="left"><p>Decrease Width</p></div><div class="remove"><p>Delete Column</p></div><div class="addsubrowwrapper"><div class="addsubrow">Add SubRow</div></div></div></div>';//block_ka_html
+
+            var $selectedrow = $(this).parent().parent();
+            //console.log(selectedrow);
+            //$('#codebutton').slideDown();
+            var $blankblock = $(blankblock); //cache
+             intoolbox($blankblock);
+             refresh();            
+            //for same Height
+            var therowheight = $selectedrow.css('height');
+            //console.log(therowheight);
+            //$selectedrow.children('.dynamicblock').css('height', therowheight);
+            
+            //increase data-divide of row by 1 on adding a block
+            data_divide = $selectedrow.attr('data-divide');
+            data_divide = parseInt(data_divide) + 1 ;
+            $selectedrow.attr('data-divide',data_divide);
+
+
+            $blankblock.appendTo($selectedrow); //live append
+            //change block widths of that row
+            $selectedrow.children('.dynamicblock').each(function(){
+
+                var $this = $(this);
+                data_width = $this.attr('data-width');
+                data_width = parseInt(data_width);
+                blockwidth = (100/data_divide)*data_width;
+                $this.children('p').children('span').text(Math.round(blockwidth));
+                blockwidth = blockwidth + '%';
+                $this.css('width', blockwidth);
+                
+
+            });
+            rightfun();
+            leftfun();
+            removefun();
+            subrowfun();
+            subcolfun(); 
+             
+            //HOVER
+            $('.dynamicblock').unbind('click');//still not sure why?
+            //on hover show the options
+            $(".dynamicblock").on("click",function () {
+                $(this).css('background-color','lightblue');
+                intoolbox($(this));//for editing
+                refresh();
+                rightfun();
+                leftfun();
+                removefun();
+                subrowfun();
+                subcolfun(); 
+
+            });
+        });
+
+        //to resize heights of row
+        $(".dynamicrow").resizable({
+            maxHeight: 800,
+            minHeight: 10,
+            handles: "se",
+            resize: function (event, ui) {
+                ui.size.width = ui.originalSize.width;
+                $(this).children('p').children('span').text(Math.round(ui.size.height) + 1);
+                $('#showtheheight').text(Math.round(ui.size.height) + 1);
+
+            },
+            stop: function (event, ui) {
+
+                var newheight = Math.round(ui.size.height);
+                newheight=newheight-10;
+                $(this).children('.dynamicblock').animate({
+                    height: newheight
+                }, 500);
+
+            }
+        });
+    });       
+
+    //For deleting the last Row
+    $('#deleterow').on("click",function  () {
+
+        $('.dynamicrow').last().remove();
+
+    });
+    //Hide when modal close is clicked
+    $('#modalclose').on("click",function  () {
+        //resetting all the variables
+        awesomecontent = '';
+        block_ka_html = '';
+        fullhtmlcode = '';
+        awesomecss = '';
+        mediaqueries = '';
+        heights = '/*Heights*/';
+        widtharray=[];
+        $('#generatecode').html('');
+        $('#generatedcode').hide();
+        $('.ui-resizable-handle').show();
+    
+    });
+    //The Awesome Code for html grid content generated
+    $('#codebutton').on("click", function () {
+        $('.ui-resizable-handle').hide();
+        $('#generatedcode').show();
+        generatecode(); //function for better understanding
+
+           fullhtmlcode = '<!--Built with jQuerin Grid Builder-->\n<!doctype html>\n<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->\n<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->\n<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->\n<head>\n<meta charset="utf-8">\n<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">\n<title></title>\n<meta http-equiv="cleartype" content="on">\n<meta name="description" content="">\n<meta name="viewport" content="width=device-width">\n<meta name="HandheldFriendly" content="True">\n<meta name="MobileOptimized" content="320">\n<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">\n<link rel="stylesheet" href="style.css">\n</head>\n<body>\n' + headerarea + awesomecontent + '\n</body>\n</html>';
+                fullhtmlcode = fullhtmlcode.replace(/undefined/g, "");
+                fullhtmlcode = fullhtmlcode.replace(/id=""/g, "");
+
+                $('#thefinalhtmlcode').text(fullhtmlcode);
+
+                // The Full css code generated
+                var fullcsscode = resetcss + awesomecss + heights + '\n/*Make it responsive dude*/\n\n@media only screen and (max-width: 480px) {\n' + mediaqueries + '}';
+                $('#thefinalcsscode').text(fullcsscode);
+                //Dynmaic snippet load and syntav highlight
+                //$.getScript("builder/jquery.snippet.min.js", function() {
+
+                    $("pre.htmlCode").snippet("html",{style:"matlab"//,clipboard:'builder/ZeroClipboard.swf',showNum:true
+                });
+                    $("pre.cssCode").snippet("css",{style:"bright"//,clipboard:'builder/ZeroClipboard.swf',showNum:true
+                });
+                   
+
+    });
+var rightfun = function  () {
+            right.unbind('click');//not sure why?
+            right.on("click",function () {
+                
+                var thatnumber = $(this).siblings('.blockinfo').attr('data-id');
+                thatnumber = '#'+thatnumber;
+                var thatblock = $(thatnumber);//cache
+                var $selectedrow = thatblock.parent();//cache
+
+             
+                data_divide = parseInt($selectedrow.attr('data-divide'));
+                 if(data_divide!==1) 
+                 {
+
+                    data_divide = data_divide + 1;
+                    $selectedrow.attr('data-divide',data_divide); //for data-divde
+
+                    data_width  = parseInt(thatblock.attr('data-width'));
+                    //console.log(data_width);
+                    data_width  = data_width + 1;
+                    thatblock.attr('data-width',data_width);//for data-width
+                    thatblock.attr('data-width',data_width);
+
+                }
+
+
+                //show the left button
+                thatblock.find('.left').show();
+                //resize all the rows
+                $selectedrow.children('.dynamicblock').each(function(){
+
+                    var $this = $(this);
+                    data_width = $this.attr('data-width');
+                    data_width = parseInt(data_width);
+                    blockwidth = (100/data_divide)*data_width;
+                    //$this.children('p').children('span').text(Math.round(blockwidth));
+                    blockwidth = blockwidth + '%';
+                    $this.css('width', blockwidth);
+                    
+                });
+
+                reallocatewidths($selectedrow);
+                deleteleft($selectedrow);
+                intoolbox(thatblock);
+                refresh();leftfun();
+            });
+}
+var leftfun = function  () {
+     left.unbind('click');//not sure why?
+                //If Present reduces data-width by 1 
+             left.on("click",function () {
+                    var thatnumber = $(this).siblings('.blockinfo').attr('data-id');
+                    thatnumber = '#'+thatnumber;
+                    var thatblock = $(thatnumber);//cache
+                    var $selectedrow = thatblock.parent();//cache
+
+                    data_width  = thatblock.attr('data-width');
+                    if (data_width!==1) 
+                    {
+                        data_width  = parseInt(data_width) - 1;
+                        thatblock.attr('data-width',data_width); //for data-width
+
+                        data_divide = parseInt($selectedrow.attr('data-divide'));
+                        data_divide = data_divide - 1;
+                        $selectedrow.attr('data-divide',data_divide); 
+                    }//for data-divde        
+                    
+                    //resize all the rows
+                    $selectedrow.children('.dynamicblock').each(function(){
+
+                        var $this = $(this);
+                        data_width = $this.attr('data-width');
+                        data_width = parseInt(data_width);
+                        blockwidth = (100/data_divide)*data_width;
+                        //$this.children('p').children('span').text(Math.round(blockwidth));
+                        blockwidth = blockwidth + '%';
+                        $this.css('width', blockwidth);
+                        
+                    });
+
+                    reallocatewidths($selectedrow);
+                    deleteleft($selectedrow);
+                    intoolbox(thatblock);
+
+                    
+                });
+}
+var removefun = function  () {
+    remove.unbind('click');//not sure why?
+                //Delete a block
+                remove.on("click",function (){
+
+                    var thatnumber = $(this).siblings('.blockinfo').attr('data-id');
+                    thatnumber = '#'+thatnumber;
+                    var thatblock = $(thatnumber);//cache
+                    var $selectedrow = thatblock.parent();
+                    data_width = parseInt(thatblock.attr('data-width'));
+                    var data_divide = parseInt($selectedrow.attr('data-divide'));
+                    data_divide = data_divide - data_width ;
+                    $selectedrow.attr('data-divide',data_divide);
+
+                    $selectedrow.children('.dynamicblock').each(function(){
+
+                        var $this = $(this);
+                        data_width = $this.attr('data-width');
+                        data_width = parseInt(data_width);
+                        blockwidth = (100/data_divide)*data_width;
+                        $this.children('p').children('span').text(Math.round(blockwidth));
+                        blockwidth = blockwidth + '%';
+                        $this.css('width', blockwidth);
+                    
+
+                    });
+
+                    thatblock.remove(); //remove it
+                    reallocatewidths($selectedrow);
+                    deleteleft($selectedrow);
+                    refresh();
+                
+                });
+}
+var subrowfun = function  () {
+                addsubrow.unbind('click');//not sure why?
+                addsubrow.on("click",function  () {
+                   var thatnumber = $(this).parent().siblings('.blockinfo').attr('data-id');
+                   thatnumber = '#'+thatnumber;
+                   var thatblock = $(thatnumber);//cache
+                   var thesubrow='<div class="subrow" data-divide="0"><div class="subcolwrapper"><div class="addsubcol"></div></div></div>';
+                   $(thesubrow).appendTo(thatblock);
+                   //For the Height
+                   var noofsubrows = parseInt(thatblock.attr('data-height'));
+                   noofsubrows=noofsubrows+1;
+                   thatblock.attr('data-height',noofsubrows);
+                   var subrowheight = (100/noofsubrows)+'%';
+                   thatblock.children('.subrow').css('height',subrowheight);
+                    refresh();
+                });
+}
+var subcolfun = function  () {
+
+                   addsubcol.unbind("click");
+                   addsubcol.on("click",function  () {
+                      console.log($(this));
+                      var thatsubrow=$(this).parent().parent();
+                      data_divide = parseInt(thatsubrow.attr('data-divide'));
+                      data_divide=data_divide+1;
+                      console.log(data_divide);
+                      thatsubrow.attr('data-divide',data_divide);
+                      var subcolkahtml = '<div class="subcol"></div>';
+                      $(subcolkahtml).appendTo(thatsubrow.children('.subcolwrapper'));
+                      var width = (100/data_divide)+'%';
+                      thatsubrow.find('.subcol').css('width',width);
+
+
+                   });
+}
+ var refresh = function  () {
+    remove = $('.remove');
+    left = $('.left');
+    right = $('.right');
+    addsubrow = $('.addsubrow');
+    addsubcol = $('.addsubcol');
+
+}
+ var intoolbox = function  ($selected) {
+        $beforeselected.css('background-color','white');
+        $selected.css('background-color','lightblue');
+        var thatblockinfo = $selected.find('.blockinfo');
+        var htmlcode = $selected.children('.fixedblockoptions').html();
+        $('#toolbox').html(htmlcode);
+        refresh();
+        
+        //Live Edit will change at 4 places
+        $('.editblockid').editInPlace({
+
+        callback: function (idOfEditor, enteredText, orinalHTMLContent, settingsParams, animationCallbacks) {
+            $(this).attr('data-id', enteredText);
+            thatblockinfo.children('.editblockid').attr('data-id',enteredText);
+            thatblockinfo.children('.editblockid').text(enteredText);
+            return enteredText;
+                }
+
+            });
+
+        $('.editblockclass').editInPlace({
+
+            callback: function (idOfEditor, enteredText, orinalHTMLContent, settingsParams, animationCallbacks) {
+                        $(this).attr('data-class', enteredText);
+                thatblockinfo.children('.editblockclass').attr('data-class',enteredText);
+                thatblockinfo.children('.editblockclass').text(enteredText);
+                return enteredText;
+                    }
+
+            });
+
+                $('.editblockcomment').editInPlace({
+
+            callback: function (idOfEditor, enteredText, orinalHTMLContent, settingsParams, animationCallbacks) {
+            $(this).attr('data-comment', enteredText);
+            thatblockinfo.children('.editblockcomment').attr('data-comment',enteredText);
+            thatblockinfo.children('.editblockcomment').text(enteredText);
+            return enteredText;
+                    }
+            });
+            $beforeselected = $selected;
+    }
+    //change all the data-widths & data-divide
+    var reallocatewidths = function  ($selectedrow) {
+
+        var divisor = parseInt($selectedrow.attr('data-divide'));
+        data_divide = divisor;
+        $selectedrow.children('.dynamicblock').each(function(){
+
+             data_width = parseInt($(this).attr('data-width'));
+             
+             divisor=gcd(data_width,divisor);
+             
+        });
+        
+        $selectedrow.children('.dynamicblock').each(function(){
+
+            data_width = parseInt($(this).attr('data-width'));
+            data_width = data_width /divisor ;
+            $(this).attr('data-width',data_width);
+        });
+        
+        data_divide = data_divide / divisor ; 
+        $selectedrow.attr('data-divide',data_divide);
+
+    }
+    //Find The GCD
+    function gcd(x, y) {
+        while (y != 0) {
+            var z = x % y;
+            x = y;
+            y = z;
+        }
+        return x;
+    }
+
+    var deleteleft = function  ($selectedrow) {
+
+        //console.log('called');
+        
+         $selectedrow.find('.dynamicblock').each(function(){
+
+            data_width = parseInt($(this).attr('data-width'));
+            if (data_width===1) {
+                $(this).find('.left').hide();
+            }
+
+        });
+
+    }
+    var generatecode = function () {
+
+            var $this='';
+            var rowinfo ='';
+            var therowid ='';
+            var therowclass ='';
+            var therowcommnet ='';
+            //the start
+            awesomecss = awesomecss + '\n/*These are all the widths of elements*/\n';
+            //the two main loops 
+            // the first loop for rows
+            $('.dynamicrow').each(function (rownumber) {
+
+                //these variables are for ids clases and objects
+                var theblockid = '';
+                var theblockclass = '';
+                var blockobject ='';
+                var blockinfo = '';
+
+                $this = $(this); //cache
+                data_divide = $this.attr('data-divide');//important
+                rowinfo = $this.find('blockinfo');
+                therowid = rowinfo.children('.editblockid').attr('data-id');
+                therowclass = rowinfo.children('.editblockclass').attr('data-class');
+                therowcomment = rowinfo.children('.editblockcomment').attr('data-comment');
+                
+                awesomecontent = awesomecontent + '\t<div '; //code
+                if (typeof therowid !== "undefined" && therowid !== "") {
+                        awesomecontent = awesomecontent + 'id="' + therowid + '"';
+                    };
+                awesomecontent = awesomecontent +'class="row';
+                if (typeof therowclass !== "undefined" && therowclass !== "") {
+                        awesomecontent = awesomecontent + therowclass ;
+                    };
+                awesomecontent = awesomecontent +'">\n';
+                if (typeof therowcomment !== "undefined" && therowcomment !== "") {
+                        awesomecontent = awesomecontent +'\t<!--'+therowcomment +'-->';
+                    };
+
+                //***the second loop for blocks****
+
+                $this.children('.dynamicblock').each(function () {
+
+                    blockobject = $(this);
+                    blockinfo = blockobject.find('.blockinfo');
+                    theblockid = blockinfo.children('.editblockid').attr('data-id'); //id
+                    theblockclass = blockinfo.children('.editblockclass').attr('data-class'); //class
+                    theblockcomment = blockinfo.children('.editblockcomment').attr('data-comment'); //commenet
+                    data_width = blockobject.attr('data-width');
+                    //console.log(data_width);
+                    block_ka_html = '\n\t\t<div id="' + theblockid + '" class="col span_'+data_width+'_of_' + data_divide + ' ' + theblockclass + '">\n'; //code
+
+                    if (typeof theblockcomment !== "undefined" && theblockcomment !== "") {
+                        block_ka_html = block_ka_html + '\t\t<!--' + theblockcomment + '-->';
+                    };
+
+                    //for the css
+                    //if loop for no repeatation
+                    if (jQuery.inArray(dividewidth, widtharray)===-1) {
+
+                    dividewidth=data_width*10+data_divide;
+                    percent = (data_width/data_divide)*100;
+                    awesomecss = awesomecss + '.span_'+data_width+'_of_'+data_divide+'{ width :'+percent+'%;}\n';
+                    mediaqueries = mediaqueries + '.span_'+data_width+'_of_'+data_divide+'{ width : 100%;}\n';
+                    widtharray.push(dividewidth);
+                    };
+
+                    //3rd loop for subrows
+                    blockobject.find('.subrow').each(function () {
+                        subrowobject = $(this);
+                        datadividesub = subrowobject.attr('data-divide');
+                        block_ka_html=block_ka_html+'\n\t\t\t<div class="subrow">';
+
+                        //4rd loop
+                        subrowobject.find('.subcol').each(function() {
+                            
+                            block_ka_html = block_ka_html+'\n\t\t\t\t<div class="col span_1_of_' + datadividesub+'">\n\t\t\t\t</div>';
+                            dividewidth=10+datadividesub;
+                            if (jQuery.inArray(dividewidth, widtharray)===-1) {
+
+                            percent = 100/datadividesub;
+                            awesomecss = awesomecss + '.span_1_of_'+datadividesub+'{ width :'+percent+'%;}\n';
+                            mediaqueries = mediaqueries + '.span_1_of_'+datadividesub+'{ width : 100%;}\n';
+                            widtharray.push(dividewidth);
+
+                            }
+                        });
+                        block_ka_html=block_ka_html+'\n\t\t\t</div>';//close-subrow
+
+                    })
+                    awesomecontent = awesomecontent + block_ka_html + '\n\t\t</div>';
+                    //close for block
+
+                });
+                awesomecontent = awesomecontent + '\n\t</div>\n';
+
+                //Give heights to the differene rows
+                rownumber=rownumber+1;
+                heights = heights + '\n.row:nth-of-type(' + rownumber + '){\n\theight:' + Math.round($this.height() + 1) + 'px;\n}\n';
+
+        });
+                
+     }   
+             
+});
 </script>
 </body>
 </html>
