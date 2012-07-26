@@ -1,0 +1,219 @@
+body{
+    overflow-x: hidden;
+}
+a{
+    
+    text-decoration: none;
+}
+::selection{
+    background-color: lightgray;
+}
+#header{
+    height: 20%;
+    margin: 15px;
+}
+h5{
+    font-size: 20px;
+    color: dimgray;
+    margin: 5px;
+    padding: 5px;
+}
+#header>a,#header>div{
+    float: left;
+}
+#header p{
+    margin-left: 10px;
+    width: 90%;
+}
+#header>div{
+    width: 42%;
+}
+#heightshow{
+    font-family: 'Squada One', cursive;
+    background-color: white;
+    opacity: 0.85;
+    position: fixed;
+    top: 45%;
+    z-index: 25;
+    font-size: 20px;
+}
+	.buttoner{
+
+        font-size: 19px;
+		color: white;
+		background-color: transparent;
+        width: 21%;
+		left: 75%;
+		position:fixed;
+        z-index: 23;
+
+	}
+    #theblock{
+        left: 54%;
+    }
+    #thecode{
+        top: 60%;
+    }
+	.col{
+		margin: 0;
+	}
+	input{
+        font-size: 19px;
+    }
+    #rowoptions,#blockoptions{
+        background-color: rgb(28, 134, 37);
+    }
+    #rowoptions>div,#blockoptions>div{
+        margin-top: 5px;
+        display: block;
+	}
+	div>p{
+        text-align: right;
+		margin:auto;
+		font-size: 31px;
+		width: 14%;
+		display: inline-block;
+	}
+	.done{
+        width: 60%;
+		margin-top: 8%;
+        margin-bottom:8%;
+		text-align: center;
+        background: url(done.png) no-repeat;
+		text-align: center;
+        margin-left: 20%;
+		color: white;
+		border-radius: 8px;
+        font-size:25px;
+		cursor: pointer;
+
+	}
+    .fullyhidden{
+        color: white;
+    }
+	#dynamic{
+		width: 100%;
+	}
+	#generatedcode{
+        margin: 20px;
+    }
+    h1{
+        font-family: 'Squada One', cursive;
+        text-align: center;
+        color: darkgray;
+        -moz-box-shadow:
+        0px 1px 3px rgba(0,0,0,0.5),
+        inset 0px 0px 5px rgba(252,252,252,0.6);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(0,0,0,0.5),
+        inset 0px 0px 5px rgba(252,252,252,0.6);
+        width: 45%;
+        margin: auto;
+    }
+    /*#generatedcode>pre{
+        background-color: darkblue;
+        color: lightgray;
+        margin: auto;
+        width: 100%;
+        font-size: 19px;
+        height: 1000px;
+        overflow-y:scroll; 
+	}*/
+	.dynamicrow{
+		width: 99.9%;
+		height: 300px;
+		background-color: lightblue;
+	}
+	.dynamicblock{
+		display: inline-block;
+		background-color: orange;
+		width: 50%;
+		height: 300px;
+	}
+	.heightrow{
+        margin-left: 31%;
+        font-size:21px;
+        color: dimgray;
+    }
+    #reloadpage{
+        z-index: 50;
+        background: url(reload.png) no-repeat;
+        position: fixed;
+        color: white;
+        bottom: 2%;
+        left: 40%;
+        height: 7%;
+        width: 21%;
+    }
+	#reloadpage,#heightshow,#rowoptions,#addblock,#blockoptions,#codebutton,#generatedcode{
+		display: none;
+	}
+    #createunit{
+        top: 55%;
+    }
+	button{
+	cursor: pointer;
+    font-family: 'Squada One', cursive;
+    letter-spacing:2px;
+    font-size: 25px;
+    color: black;
+    padding: 8px 22px;
+    background:url(plus.jpg) no-repeat;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #ffffff;
+    -moz-box-shadow:
+        0px 1px 3px rgba(0,0,0,0.5),
+        inset 0px 0px 5px rgba(252,252,252,0.6);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(0,0,0,0.5),
+        inset 0px 0px 5px rgba(252,252,252,0.6);
+    text-shadow:
+        0px -1px 3px rgba(255,255,255,0.8),
+        0px 1px 0px rgba(255,255,255,0.3);
+		width: 100%;
+}
+/*Styles of drag height*/
+
+
+.ui-resizable {
+position: relative;
+}
+.ui-widget-content {
+border: 1px solid #AAA;
+color: #222;
+}
+.ui-widget-header {
+border: 1px solid #AAA;
+background: #CCC url() 50% 50% repeat-x;
+color: #222;
+font-weight: bold;
+}
+.ui-widget-content {
+color: #222;
+}
+.ui-widget-content .ui-icon {
+background-image: url(resize.png);
+}
+
+.ui-resizable-se {
+cursor: se-resize;
+width: 40px;
+height: 40px;
+right: 1px;
+bottom: 1px;
+}
+.ui-resizable-handle {
+cursor: s-resize;
+width: 100%;
+height: 5px;
+position: absolute;
+font-size: 0.1px;
+display: block;
+}
+
+.ui-widget-content.ui-resizable
+.ui-widget-content {
+color: #222;
+}
