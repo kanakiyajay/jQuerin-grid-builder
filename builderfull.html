@@ -26,13 +26,13 @@
 
                     <ul id="header">
                         <li>
-                            <a target="_blank" href="http://jquer.in">
+                            
                                 <p class="banner">jQuerin Grid Builder</p>
                                 <div>Built By Jay Kanakiya</div>
-                            </a>                            
+                                                        
                         </li>
                         <li>
-                            <a href="">
+                            <a href="http://www.responsivegridsystem.com" target="_blank" title="the responsive grid system">
                              <p class="banner">
                                 <img src="builder/grid.jpg" alt="">
                             </p>
@@ -41,8 +41,7 @@
                             </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
+                        <li id="howtouse">
                                 <p class="banner">
                                     <img src="builder/howtouse.png" alt="">
                                 </p>
@@ -76,8 +75,8 @@
                                 <img src="builder/share.jpg" alt="">
                             </p>
                                 <div>
-                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Make way for the awesome grid builder" data-via="techiejayk" data-size="large">Tweet</a>
-                        <a href="https://twitter.com/techiejayk" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @techiejayk</a>
+                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Make way for the awesome grid builder" data-via="techiejayk" data-size="small">Tweet</a>
+                        <a href="https://twitter.com/techiejayk" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @techiejayk</a>
                             </div>
                         </li>
                         <li id="codebutton">
@@ -104,11 +103,9 @@
                     
                 <div class="buttoner" id="buttonerrow">
                     <div class="wrapperbutton" id="addrow">
-                        <p style="background:url(builder/plus.png) no-repeat;"></p>
                         <div>Add Row</div>
                     </div>
                     <div class="wrapperbutton" id="deleterow">
-                        <p style="background:url(builder/minus.png) no-repeat;"></p>
                         <div>Delete Row</div>
                     </div>
                 </div>
@@ -164,6 +161,8 @@ audio, video {margin: 0;padding: 0;border: 0outline: 0;font-size: 100%;vertical-
 <script type="text/javascript" src="builder/jquery-ui.min.js"></script>
 <script type="text/javascript" src="builder/jquery.editinplace.js"></script>
 <script type="text/javascript" src="builder/jquery.snippet.min.js"></script>
+<script type="text/javascript" src="builder/jquery.scrollto.min.js"></script>
+<script type="text/javascript" src="builder/jquery.aSimpleTour.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function () {
@@ -197,11 +196,35 @@ $(document).ready(function () {
     var awesomecss = '';
     var mediaqueries = '';
     var heights = '/*Heights*/';
-    var percent='';
     var subrowobject='';
     var datadividesub='';
+    var data_height='';
+    var number=1;
+    var cssforheights='/*These are the heights of the subrows*/\n';
     var widtharray = [];
-
+    //A sImple Tour 
+    options = {
+      data : [
+       { element : '#addrow', 'tooltip' : 'click here to add rows', 'position' : 'BL', 'text' : '<h4>Rows have blue border</h4>' },
+        { element : '#toolbox', 'tooltip' : 'Change the attributes by clicking on text', 'position' : 'R', 'text' : '<h4>This is the toolbox</h4>' },
+        { element : '#addblock', 'tooltip' : 'click here to add cols', 'position' : 'BL', 'text' : '<h4>Blocks have green border</h4>' }
+      ],
+      controlsPosition : 'RT'
+    }
+    $('#howtouse').on("click",function  () {
+        
+        $.aSimpleTour(options);
+        
+    });
+    //MENU HOVER
+    $(".banner").hover(
+      function () {
+        $(this).addClass('hovered');
+      }, 
+      function () {
+        $(this).removeClass('hovered');
+      }
+    );
     //On adding a row
     $('#addrow').on("click", function () {
         universalid = universalid +1;
@@ -217,7 +240,7 @@ $(document).ready(function () {
         $('.addblock').click(function () {
             universalid=universalid+1;
             //console.log(rownumber);
-            var blankblock = '<div class="dynamicblock" data-width="1" data-height="0" id="'+universalid+'"><div class="fixedblockoptions" ><b>Column</b><div class="blockinfo" data-id="'+universalid+'">#<span class="editblockid" data-id="">ID</span><br/>.<span class="editblockclass" data-class="">Class</span><br/>//<span class="editblockcomment" data-comment="">Comment</span></div><div class="right"><p>Increase Width</p></div><div class="left"><p>Decrease Width</p></div><div class="remove"><p>Delete Column</p></div><div class="addsubrowwrapper"><div class="addsubrow">Add SubRow</div></div></div></div>';//block_ka_html
+            var blankblock = '<div class="dynamicblock" data-width="1" data-height="0" id="'+universalid+'"><div class="fixedblockoptions" ><b>Column</b><div class="blockinfo" data-id="'+universalid+'">#<span class="editblockid" data-id="">ID</span><br/>.<span class="editblockclass" data-class="">Class</span><br/>//<span class="editblockcomment" data-comment="">Comment</span></div><div class="right"><p>Increase</p></div><div class="left"><p>Decrease</p></div><div class="remove"><p>Delete</p></div><div class="addsubrow"><p>SubRow</p></div></div></div>';//block_ka_html
 
             var $selectedrow = $(this).parent().parent();
             //console.log(selectedrow);
@@ -287,9 +310,7 @@ $(document).ready(function () {
 
                 var newheight = Math.round(ui.size.height);
                 newheight=newheight-10;
-                $(this).children('.dynamicblock').animate({
-                    height: newheight
-                }, 500);
+                $(this).children('.dynamicblock').css(height, newheight);
 
             }
         });
@@ -329,7 +350,7 @@ $(document).ready(function () {
                 $('#thefinalhtmlcode').text(fullhtmlcode);
 
                 // The Full css code generated
-                var fullcsscode = resetcss + awesomecss + heights + '\n/*Make it responsive dude*/\n\n@media only screen and (max-width: 480px) {\n' + mediaqueries + '}';
+                var fullcsscode = resetcss + awesomecss + heights +cssforheights +'\n/*Make it responsive dude*/\n\n@media only screen and (max-width: 480px) {\n' + mediaqueries + '}';
                 $('#thefinalcsscode').text(fullcsscode);
                 //Dynmaic snippet load and syntav highlight
                 //$.getScript("builder/jquery.snippet.min.js", function() {
@@ -465,7 +486,7 @@ var removefun = function  () {
 var subrowfun = function  () {
                 addsubrow.unbind('click');//not sure why?
                 addsubrow.on("click",function  () {
-                   var thatnumber = $(this).parent().siblings('.blockinfo').attr('data-id');
+                   var thatnumber = $(this).siblings('.blockinfo').attr('data-id');
                    thatnumber = '#'+thatnumber;
                    var thatblock = $(thatnumber);//cache
                    var thesubrow='<div class="subrow" data-divide="0"><div class="subcolwrapper"><div class="addsubcol"></div></div></div>';
@@ -503,7 +524,7 @@ var subcolfun = function  () {
     right = $('.right');
     addsubrow = $('.addsubrow');
     addsubcol = $('.addsubcol');
-
+    rightfun();leftfun();removefun();subcolfun();subrowfun();
 }
  var intoolbox = function  ($selected) {
         $beforeselected.css('background-color','white');
@@ -644,7 +665,20 @@ var subcolfun = function  () {
                     theblockclass = blockinfo.children('.editblockclass').attr('data-class'); //class
                     theblockcomment = blockinfo.children('.editblockcomment').attr('data-comment'); //commenet
                     data_width = blockobject.attr('data-width');
-                    //console.log(data_width);
+                    data_height=parseInt(blockobject.attr('data-height'));
+                    console.log(theblockid);
+                    console.log(data_height);
+                    if (data_height!==0)
+                    {
+                        if(typeof theblockid === "undefined" || theblockid === "") 
+                        {
+
+                            theblockid=number.toString();
+                            number=number+1;
+                        }
+                        cssforheights=cssforheights+'\n#'+theblockid+'>.subrow{\n\theight:'+(100/data_height)+'%;\n}';
+                    }
+                    console.log(theblockid);
                     block_ka_html = '\n\t\t<div id="' + theblockid + '" class="col span_'+data_width+'_of_' + data_divide + ' ' + theblockclass + '">\n'; //code
 
                     if (typeof theblockcomment !== "undefined" && theblockcomment !== "") {
