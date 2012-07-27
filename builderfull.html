@@ -143,7 +143,7 @@ pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong
 sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption,
 tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,time,mark, 
-audio, video {margin: 0;padding: 0;border: 0outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+audio, video {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
  body {line-height: 1;}
  article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
  nav ul {list-style: none;}
@@ -156,10 +156,7 @@ audio, video {margin: 0;padding: 0;border: 0outline: 0;font-size: 100%;vertical-
  table {border-collapse: collapse;border-spacing: 0;}
  hr {display: block;height: 1px;border: 0; border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
  input, select {  vertical-align: middle;}
-.col {display: block;float:left;margin:0;height:300px;border:0;height:100%;}
-.row{height:300px;background-color:lightgray;}
-.col:first-child { margin-left: 0; }
-
+.col {float:left;height:100%;}
 </div>
 
 <script type="text/javascript" src="builder/jquery.min.js"></script>
@@ -233,7 +230,7 @@ $(document).ready(function () {
     //On adding a row
     $('#addrow').on("click", function () {
         universalid = universalid +1;
-        var blankrow = '<div class="dynamicrow ui-widget-content" data-divide="0" id="' + universalid + '"><p>Height : <span>300</span>px</p><div class="fixedblockoptions" ><b>Row</b><div class="blockinfo" data-id="'+universalid+'">#<span class="editblockid" data-id="">ID</span><br/>.<span class="editblockclass" data-class="">Class</span><br/>//<span class="editblockcomment" data-comment="">Comment</span></div></div><div class="theblock"><button class="addblock"><br>C<br>O<br>L</button></div></div>';//row_ka_html
+        var blankrow = '<div class="dynamicrow ui-widget-content" data-divide="0" id="' + universalid + '"><p>Height : <span>200</span>px</p><div class="fixedblockoptions" ><b>Row</b><div class="blockinfo" data-id="'+universalid+'">#<span class="editblockid" data-id="">ID</span><br/>.<span class="editblockclass" data-class="">Class</span><br/>//<span class="editblockcomment" data-comment="">Comment</span></div></div><div class="theblock"><button class="addblock"><br>C<br>O<br>L</button></div></div>';//row_ka_html
 
         $('#deleterow').show();
         var blankrowkaid = '#'+universalid;
@@ -302,12 +299,10 @@ $(document).ready(function () {
             handles: "se",
             resize: function (event, ui) {
                 ui.size.width = ui.originalSize.width;
-                $(this).children('p').children('span').text(Math.round(ui.size.height) + 1);
-                $('#showtheheight').text(Math.round(ui.size.height) + 1);
-
             },
             stop: function (event, ui) {
 
+                $(this).children('p').children('span').text(Math.round(ui.size.height) + 1);
                 var newheight = Math.round(ui.size.height);
                 newheight=newheight-10;
                 $(this).children('.dynamicblock').css(height, newheight);
@@ -666,7 +661,7 @@ var subcolfun = function  () {
                         if(typeof theblockid === "undefined" || theblockid === "") 
                         {
 
-                            theblockid=number.toString();
+                            theblockid='block'+number.toString();
                             number=number+1;
                         }
                         cssforheights=cssforheights+'\n#'+theblockid+'>.subrow{\n\theight:'+(100/data_height)+'%;\n}';
@@ -675,7 +670,7 @@ var subcolfun = function  () {
 
                     if (typeof theblockcomment !== "undefined" && theblockcomment !== "") {
                         block_ka_html = block_ka_html + '\t\t<!--' + theblockcomment + '-->';
-                    };
+                    }
 
                     //for the css
                     //if loop for no repeatation
@@ -715,7 +710,7 @@ var subcolfun = function  () {
                     //close for block
 
                 });
-                awesomecontent = awesomecontent + '\n\t</div>\n';
+                awesomecontent = awesomecontent + '\n\t</div>\n';//close for rows
 
                 //Give heights to the differene rows
                 rownumber=rownumber+1;
