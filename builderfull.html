@@ -1,7 +1,6 @@
 <html>
 <head>
     <title>jQuerin Grid Builder</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" href="builder/builder.css">
 <style type="text/css">
 
@@ -30,7 +29,7 @@
                         <li>
                             
                                 <p class="banner">jQuerin Grid Builder</p>
-                                <div>Built By Jay Kanakiya</div>
+                                <div>jQuerin Grid Builder</div>
                                                         
                         </li>
                         <li>
@@ -90,20 +89,18 @@
                             </div>
                             </a>
                         </li>
-                        <li id="codebutton">
-                            <p class="banner">
-                                <img src="builder/generate.jpg" alt="">
-                            </p>
-                            <div>
-                                Generate Code
-                            </div>
-                        </li>
+
+                            
                     </ul>
                 
                 </div>
                 <div id="toolbox">
                     
                 </div>
+                <div id="codebutton">
+                      Generate Code
+                </div>
+                <div id="built">By Jay Kanakiya</div>
                 <div id="dynamicwrapper">
                     <div id="dynamic">
                     
@@ -303,9 +300,6 @@ $(document).ready(function () {
             stop: function (event, ui) {
 
                 $(this).children('p').children('span').text(Math.round(ui.size.height) + 1);
-                var newheight = Math.round(ui.size.height);
-                newheight=newheight-10;
-                $(this).children('.dynamicblock').css(height, newheight);
 
             }
         });
