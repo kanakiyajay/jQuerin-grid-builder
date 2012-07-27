@@ -9,6 +9,8 @@
 <!--
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>              
+                
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-33060097-1']);
@@ -76,8 +78,17 @@
                             </p>
                                 <div>
                                     <a href="https://twitter.com/share" class="twitter-share-button" data-text="Make way for the awesome grid builder" data-via="techiejayk" data-size="small">Tweet</a>
-                        <a href="https://twitter.com/techiejayk" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @techiejayk</a>
                             </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="banner">
+                                <img src="builder/quora.jpg" alt="">
+                                </p>
+                                <div>
+                                    Feedback on Quora
+                            </div>
+                            </a>
                         </li>
                         <li id="codebutton">
                             <p class="banner">
@@ -90,9 +101,6 @@
                     </ul>
                 
                 </div>
-                <!--
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>              
-                -->
                 <div id="toolbox">
                     
                 </div>
@@ -338,7 +346,7 @@ $(document).ready(function () {
         $('#generatedcode').show();
         generatecode(); //function for better understanding
 
-           fullhtmlcode = '<!--Built with jQuerin Grid Builder-->\n<!doctype html>\n<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->\n<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->\n<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->\n<head>\n<meta charset="utf-8">\n<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">\n<title></title>\n<meta http-equiv="cleartype" content="on">\n<meta name="description" content="">\n<meta name="viewport" content="width=device-width">\n<meta name="HandheldFriendly" content="True">\n<meta name="MobileOptimized" content="320">\n<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">\n<link rel="stylesheet" href="style.css">\n</head>\n<body>\n' + headerarea + awesomecontent + '\n</body>\n</html>';
+           fullhtmlcode = '<!--Built with jQuerin Grid Builder-->\n<!doctype html>\n<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->\n<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->\n<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->\n<head>\n<meta charset="utf-8">\n<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">\n<title></title>\n<meta http-equiv="cleartype" content="on">\n<meta name="description" content="">\n<meta name="viewport" content="width=device-width">\n<meta name="HandheldFriendly" content="True">\n<meta name="MobileOptimized" content="320">\n<link rel="stylesheet" href="style.css">\n</head>\n<body>\n' + headerarea + awesomecontent + '\n</body>\n</html>';
                 fullhtmlcode = fullhtmlcode.replace(/undefined/g, "");
                 fullhtmlcode = fullhtmlcode.replace(/id=""/g, "");
 
