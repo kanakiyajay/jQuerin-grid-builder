@@ -37,7 +37,7 @@ li:first-child .banner{padding-top: 5%;color: white;}
   box-shadow: 0px 1px 5px 4px #000000;  
 }
 #toolbox>b{color: white;width: 100%;font-weight:normal;font-size: 1.3em;padding-bottom:10px;display: block;text-align: center;}
-#dynamicwrapper{width:86.5%;margin-left: 12.3%;background-color: white;min-height: 500px;height: auto;
+#dynamicwrapper{width:86.5%;margin-left: 12.3%;background-color: white;min-height: 80%;height: auto;
   -moz-box-shadow: 0px 1px 10px 5px #000000;
   -webkit-box-shadow: 0px 1px 10px 5px #000000;
   -o-box-shadow: 0px 1px 10px 5px #000000;

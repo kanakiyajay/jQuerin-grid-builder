@@ -239,19 +239,14 @@ $(document).ready(function () {
         $(".addblock").unbind('click');//Still not sure why?
         $('.addblock').click(function () {
             universalid=universalid+1;
-            //console.log(rownumber);
             var blankblock = '<div class="dynamicblock" data-width="1" data-height="0" id="'+universalid+'"><div class="fixedblockoptions" ><b>Column</b><div class="blockinfo" data-id="'+universalid+'">#<span class="editblockid" data-id="">ID</span><br/>.<span class="editblockclass" data-class="">Class</span><br/>//<span class="editblockcomment" data-comment="">Comment</span></div><div class="right"><p>Increase</p></div><div class="left"><p>Decrease</p></div><div class="remove"><p>Delete</p></div><div class="addsubrow"><p>SubRow</p></div></div></div>';//block_ka_html
 
             var $selectedrow = $(this).parent().parent();
-            //console.log(selectedrow);
-            //$('#codebutton').slideDown();
             var $blankblock = $(blankblock); //cache
              intoolbox($blankblock);
              refresh();            
             //for same Height
             var therowheight = $selectedrow.css('height');
-            //console.log(therowheight);
-            //$selectedrow.children('.dynamicblock').css('height', therowheight);
             
             //increase data-divide of row by 1 on adding a block
             data_divide = $selectedrow.attr('data-divide');
@@ -380,7 +375,6 @@ var rightfun = function  () {
                     $selectedrow.attr('data-divide',data_divide); //for data-divde
 
                     data_width  = parseInt(thatblock.attr('data-width'));
-                    //console.log(data_width);
                     data_width  = data_width + 1;
                     thatblock.attr('data-width',data_width);//for data-width
                     thatblock.attr('data-width',data_width);
@@ -504,11 +498,9 @@ var subcolfun = function  () {
 
                    addsubcol.unbind("click");
                    addsubcol.on("click",function  () {
-                      console.log($(this));
                       var thatsubrow=$(this).parent().parent();
                       data_divide = parseInt(thatsubrow.attr('data-divide'));
                       data_divide=data_divide+1;
-                      console.log(data_divide);
                       thatsubrow.attr('data-divide',data_divide);
                       var subcolkahtml = '<div class="subcol"></div>';
                       $(subcolkahtml).appendTo(thatsubrow.children('.subcolwrapper'));
@@ -603,8 +595,6 @@ var subcolfun = function  () {
     }
 
     var deleteleft = function  ($selectedrow) {
-
-        //console.log('called');
         
          $selectedrow.find('.dynamicblock').each(function(){
 
@@ -666,8 +656,6 @@ var subcolfun = function  () {
                     theblockcomment = blockinfo.children('.editblockcomment').attr('data-comment'); //commenet
                     data_width = blockobject.attr('data-width');
                     data_height=parseInt(blockobject.attr('data-height'));
-                    console.log(theblockid);
-                    console.log(data_height);
                     if (data_height!==0)
                     {
                         if(typeof theblockid === "undefined" || theblockid === "") 
@@ -678,7 +666,6 @@ var subcolfun = function  () {
                         }
                         cssforheights=cssforheights+'\n#'+theblockid+'>.subrow{\n\theight:'+(100/data_height)+'%;\n}';
                     }
-                    console.log(theblockid);
                     block_ka_html = '\n\t\t<div id="' + theblockid + '" class="col span_'+data_width+'_of_' + data_divide + ' ' + theblockclass + '">\n'; //code
 
                     if (typeof theblockcomment !== "undefined" && theblockcomment !== "") {
