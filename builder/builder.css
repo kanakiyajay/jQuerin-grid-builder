@@ -3,7 +3,9 @@ div,h5,ul,p,.col,body{margin:0;padding:0;display: block;font-family: "helvetica 
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;}
 ul{list-style: none}
+.h2{font-size: 1em}
 a{text-decoration:none;font-size:1.125em;}
+a,a:visited,a:hover{text-decoration: none;color: white}
 body{overflow-x:hidden;;background: url(tiny_grid.png) repeat white;font-size: 100%;}
 pre{margin: 1%;}input{width: 70%;font-size:1.188em}
 button{cursor:pointer;background-color:white;font-size:1em;color:#000;width:100%;}
@@ -14,7 +16,7 @@ h1{text-align:center;font-size:1.4em;;color:white;-moz-box-shadow:0 1px 3px rgba
 ::-webkit-scrollbar-track{background:#dbdbdb;border-radius:30px}
 ::-webkit-scrollbar-thumb{border-radius:30px;background:#ababab;-webkit-box-shadow:none}
 #header{height:10%;margin:0;}
-#header>li{float:left;width: 16.6667%;overflow: hidden;text-align: center;height: 54%;background-color: black;border-bottom: 3px solid #FFD339;cursor: pointer;}
+#header>li{float:left;width: 16.6667%;overflow: hidden;text-align: center;height: 54%;background-color: black;border-bottom: 3px solid #B8B8B8;cursor: pointer;}
 li:first-child>a>.banner{padding-top: 3%;}
 .banner{height: 100%;}
 .hovered{margin-top: -20%;}
@@ -31,7 +33,7 @@ li:first-child>a>.banner{padding-top: 3%;}
   -o-box-shadow: 0px 1px 5px 4px #D3D3D3;
   box-shadow: 0px 1px 5px 4px #D3D3D3;}
 #deleterow{display: none;}
-#deleterow>div{background: url(minus.png) no-repeat white 92% 13% ;float: right;width: 20%;}
+#deleterow>div{background: url(close.png) no-repeat white 92% 13% ;float: right;width: 20%;}
 .wrapperbutton>div:hover,button:hover,b:hover{color: gray;}
 #toolbox{position: fixed;width: 10.7%;z-index:90;height: 41%;left: 7px;top:16%;background-color: black;
   border-radius: 6px;opacity: 0.9;
@@ -41,7 +43,7 @@ li:first-child>a>.banner{padding-top: 3%;}
   box-shadow: 0px 1px 5px 4px #000000;  
 }
 #toolbox>b{color: white;width: 100%;font-weight:normal;font-size: 1.3em;padding-bottom:10px;display: block;text-align: center;}
-#codebutton{z-index: 50;background-color: rgb(74, 51, 170);color: white;position: fixed;left: 7px;bottom: 35%;padding: 0.9%;border-radius: 6px;width: 8.7%;text-align: center;cursor: pointer;}
+#codebutton{z-index: 50;background:url(generate.png) no-repeat rgb(74, 51, 170);color: white;position: fixed;left: 7px;bottom: 35%;padding: 0.9%;border-radius: 6px;width: 8.7%;text-align: center;cursor: pointer;padding-left: 1.2%;}
 #codebutton:hover,#built{background-color: black;}
 #built{position: fixed;bottom: 0;padding: 6px;color: white;font-size: 0.875em}
 #dynamicwrapper{width:86.5%;margin-left: 12.3%;background-color: white;min-height: 80%;height: auto;
@@ -118,8 +120,8 @@ width: 10px;
 height: 10px;
 right: 3%;
 top: 12%;}
-#tourControls{top: 10px;
-right: 10px;z-index: 200;}
+#tourControls{top: 5%;
+right: 48%;z-index: 200;}
 #tourtip{z-index: 200;}
 /*For Resizable Rows*/
 .ui-resizable{position:relative}

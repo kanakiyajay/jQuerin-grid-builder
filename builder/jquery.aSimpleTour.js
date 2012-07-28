@@ -1,23 +1,10 @@
-/**
- * jQuery aSimpleTour
- *
- * @description Tour web
- * @author alvaro.veliz@gmail.com
- * @servedby perkins (http://p.erkins.com)
- * 
- * Dependencies :
- * - jQuery scrollTo
- * 
- * This idea is based on appTour
- */
-
 (function( $ ) {
 
   var settings = {
     data : [],
     autoStart : false,
     controlsPosition : 'TR',
-    welcomeMessage : '<h2>Tour</h2><p>Welcome to the Tour Plugin</p>',
+    welcomeMessage : '<h2 class="h2">Welcome to the jQuerin Grid Builder</h2>',
     buttons : {
       next : 'Next',
       prev : 'Previous',
@@ -29,7 +16,7 @@
       color: '#fff'
     },
     tooltipColors : {
-      background: 'rgba(0, 0, 0, 0.70)',
+      background: 'rgba(8, 68, 142, 0.80)',
       color: '#fff'
     }
   };
@@ -46,9 +33,8 @@
                       'display'     : 'none',
                       'padding'     : '10px 20px',
                       'position'    : 'absolute',
-                      'font-family' : 'sans-serif',
-                      'border-radius' : '5px',
-                      'font-size'   : '12px',
+                      'border-radius' : '8px',
+                      'font-size'   : '1em',
                       'box-sizing'  : 'border-box'
                     });
 
