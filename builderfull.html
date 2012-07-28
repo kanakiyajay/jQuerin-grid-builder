@@ -28,8 +28,8 @@
                     <ul id="header">
                         <li>
                             
-                                <p class="banner">jQuerin Grid Builder</p>
-                                <div>jQuerin Grid Builder</div>
+                                <a href="#" title="The jQuerin Grid Builder"><p class="banner">jQuerin Grid Builder</p>
+                                    <div>jQuerin Grid Builder</div></a>
                                                         
                         </li>
                         <li>
@@ -43,6 +43,7 @@
                             </a>
                         </li>
                         <li id="howtouse">
+                            <a href="">
                                 <p class="banner">
                                     <img src="builder/howtouse.png" alt="">
                                 </p>
@@ -52,7 +53,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://github.com/kanakiyajay/jQuerin-grid-builder" title="jQuerin Grid Builder on GitHub" target="_blank">
                                 <p class="banner">
                                 <img src="builder/github.png" alt="">
                                 </p>  
@@ -62,31 +63,21 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <p class="banner">
-                                <img src="builder/apple.png" alt="">
+                            <a href=""><p class="banner">
+                                    <img src="builder/share.jpg" alt="">
                                 </p>
-                                <div>
-                                    Help my Buy a MAC
-                            </div>
-                            </a>
+                                    <div>
+                                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Make way for the awesome grid builder" data-via="techiejayk" data-size="small">Tweet</a>
+                                </div></a>
                         </li>
                         <li>
-                            <p class="banner">
-                                <img src="builder/share.jpg" alt="">
-                            </p>
-                                <div>
-                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Make way for the awesome grid builder" data-via="techiejayk" data-size="small">Tweet</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="">
+                            <a href="http://www.quora.com/Grid-based-Design-web/What-features-should-be-there-in-the-jquerin-grid-builder" target="_blank" title="feedback for jQuerin Grid Builder on Quora">
                                 <p class="banner">
                                 <img src="builder/quora.jpg" alt="">
                                 </p>
                                 <div>
                                     Feedback on Quora
-                            </div>
+                                </div>
                             </a>
                         </li>
 
@@ -105,7 +96,7 @@
                     <div id="dynamic">
                     
                 </div>
-                    
+                <div id="placeholder"></div>   
                 <div class="buttoner" id="buttonerrow">
                     <div class="wrapperbutton" id="addrow">
                         <div>Add Row</div>
@@ -205,8 +196,9 @@ $(document).ready(function () {
     options = {
       data : [
        { element : '#addrow', 'tooltip' : 'click here to add rows', 'position' : 'BL', 'text' : '<h4>Rows have blue border</h4>' },
-        { element : '#toolbox', 'tooltip' : 'Change the attributes by clicking on text', 'position' : 'R', 'text' : '<h4>This is the toolbox</h4>' },
-        { element : '#addblock', 'tooltip' : 'click here to add cols', 'position' : 'BL', 'text' : '<h4>Blocks have green border</h4>' }
+        { element : '#toolbox', 'tooltip' : 'Change the attributes by clicking on text', 'position' : 'R', 'text' : '<h4>The toolbox</h4>' },
+        { element : '#placeholder', 'tooltip' : 'click here to add cols', 'position' : 'BL', 'text' : '<h4>Blocks have green border</h4>' },
+        { element : '#toolbox', 'tooltip' : 'Increase , Decrease, \nDelete ,Add Subrows to Blocks', 'position' : 'B' }
       ],
       controlsPosition : 'RT'
     }
@@ -216,12 +208,12 @@ $(document).ready(function () {
         
     });
     //MENU HOVER
-    $(".banner").hover(
+    $("li").hover(
       function () {
-        $(this).addClass('hovered');
+        $(this).find('.banner').addClass('hovered');
       }, 
       function () {
-        $(this).removeClass('hovered');
+        $(this).find('.banner').removeClass('hovered');
       }
     );
     //On adding a row
