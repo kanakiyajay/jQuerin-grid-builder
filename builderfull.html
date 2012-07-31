@@ -6,7 +6,7 @@
 
 </style>
                 
-<script type="text/javascript">
+<!--<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-33060097-1']);
   _gaq.push(['_trackPageview']);
@@ -64,7 +64,7 @@
                                 </p>
                                     <div>
                                         <a href="https://twitter.com/share" class="twitter-share-button" data-text="Make way for the awesome grid builder" data-via="techiejayk" data-size="small">Tweet</a>
-                                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>              
+                                        <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->             
 
                                 </div></a>
                         </li>
@@ -145,18 +145,17 @@ audio, video {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical
 .col {float:left;height:100%;}
 </div>
 
-<script type="text/javascript" src="builder/jquery.min.js"></script>
-<script type="text/javascript" src="builder/jquery-ui.min.js"></script>
-<script type="text/javascript" src="builder/jquery.editinplace.js"></script>
-<script type="text/javascript" src="builder/jquery.snippet.min.js"></script>
-<script type="text/javascript" src="builder/jquery.scrollto.min.js"></script>
-<script type="text/javascript" src="builder/jquery.aSimpleTour.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function () {
     
     $('.fullyhidden').hide();
-
+    $.getScript("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js");
+    $.getScript("builder/jquery.editinplace.js");
+    $.getScript("builder/jquery.snippet.min.js");
+    $.getScript("builder/jquery.scrollto.min.js");
+    $.getScript("builder/jquery.aSimpleTour.js");    
     //Global Variables
     //These are for live manipulation
     var mainwidth = $(this).width() //-16;
@@ -638,7 +637,7 @@ var subcolfun = function  () {
                     theblockid = blockinfo.children('.editblockid').attr('data-id'); //id
                     theblockclass = blockinfo.children('.editblockclass').attr('data-class'); //class
                     theblockcomment = blockinfo.children('.editblockcomment').attr('data-comment'); //commenet
-                    data_width = blockobject.attr('data-width');
+                    data_width = parseInt(blockobject.attr('data-width'));
                     data_height=parseInt(blockobject.attr('data-height'));
                     if (data_height!==0)
                     {
@@ -656,11 +655,11 @@ var subcolfun = function  () {
                         block_ka_html = block_ka_html + '\t\t<!--' + theblockcomment + '-->';
                     }
 
+                    dividewidth=data_width*10+data_divide;
                     //for the css
                     //if loop for no repeatation
                     if (jQuery.inArray(dividewidth, widtharray)===-1) {
 
-                    dividewidth=data_width*10+data_divide;
                     percent = (data_width/data_divide)*100;
                     awesomecss = awesomecss + '.span_'+data_width+'_of_'+data_divide+'{ width :'+percent+'%;}\n';
                     mediaqueries = mediaqueries + '.span_'+data_width+'_of_'+data_divide+'{ width : 100%;}\n';
