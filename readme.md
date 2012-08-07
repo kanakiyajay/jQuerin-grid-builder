@@ -6,7 +6,7 @@ See it in action below
 
 <h2>What you can do</h2>
 
-There are dozens of frameworks out there like Zengrids,ZURB,Less,Bootstrap,Blueprint ,Elastic,960.gs... the list goes on.You can build jQuerin Grid builders for your favourite framework.Alternatively You can make the jQuerin Grid Builder more awesome by includeing more options of your choice like creating the Sass code for this.
+There are dozens of frameworks out there like Zengrids,ZURB,Less,Bootstrap,Blueprint ,Elastic,960.gs... the list goes on.You can build jQuerin Grid builders for your favourite framework.Alternatively You can make the jQuerin Grid Builder more awesome by including more options of your choice like creating the Sass code for this.
 
 <h2>The Nitty-Gritty</h2>
 

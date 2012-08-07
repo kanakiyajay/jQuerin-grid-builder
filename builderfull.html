@@ -151,9 +151,8 @@ audio, video {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical
 $(document).ready(function () {
     
     $('.fullyhidden').hide();
-    $.getScript("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js");
-    $.getScript("builder/jquery.editinplace.js");
-    $.getScript("builder/jquery.snippet.min.js");
+    
+    $.getScript("builder/jquery.editinplace.js");    
     $.getScript("builder/jquery.scrollto.min.js");
     $.getScript("builder/jquery.aSimpleTour.js");    
     //Global Variables
@@ -317,6 +316,7 @@ $(document).ready(function () {
     });
     //The Awesome Code for html grid content generated
     $('#codebutton').on("click", function () {
+        
         $('.ui-resizable-handle').hide();
         $('#generatedcode').show();
         generatecode(); //function for better understanding
@@ -331,11 +331,11 @@ $(document).ready(function () {
                 var fullcsscode = resetcss + awesomecss + heights +cssforheights +'\n/*Make it responsive dude*/\n\n@media only screen and (max-width: 480px) {\n' + mediaqueries + '}';
                 $('#thefinalcsscode').text(fullcsscode);
                 //Dynmaic snippet load and syntav highlight
-                //$.getScript("builder/jquery.snippet.min.js", function() {
+                $.getScript("builder/jquery.snippet.min.js", function() {
 
-                    $("pre.htmlCode").snippet("html",{style:"matlab"//,clipboard:'builder/ZeroClipboard.swf',showNum:true
+                    $("pre.htmlCode").snippet("html",{style:"matlab",clipboard:'builder/ZeroClipboard.swf',showNum:true
                 });
-                    $("pre.cssCode").snippet("css",{style:"bright"//,clipboard:'builder/ZeroClipboard.swf',showNum:true
+                    $("pre.cssCode").snippet("css",{style:"bright",clipboard:'builder/ZeroClipboard.swf',showNum:true
                 });
                    
 
