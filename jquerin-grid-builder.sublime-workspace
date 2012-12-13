@@ -1,0 +1,1089 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"da",
+				"data_divide"
+			],
+			[
+				"te",
+				"text-indent"
+			],
+			[
+				"get",
+				"getScript"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"too",
+				"toolbox"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"bt",
+				"bottom"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"be",
+				"beforeselected"
+			],
+			[
+				"re",
+				"resetcss"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"dat",
+				"data_height"
+			],
+			[
+				"bl",
+				"blockid"
+			],
+			[
+				"css",
+				"cssforheights"
+			],
+			[
+				"the",
+				"theblockid"
+			],
+			[
+				"data",
+				"data_height"
+			],
+			[
+				"data-",
+				"data-height"
+			],
+			[
+				"data_",
+				"data_height"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"ad",
+				"addsubrow"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"subcol",
+				"subcolwrapper"
+			],
+			[
+				"that",
+				"thatnumber"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"sub",
+				"subcol"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"subrow",
+				"subrowobject"
+			],
+			[
+				"subr",
+				"subrow"
+			],
+			[
+				"div",
+				"dividewidth"
+			],
+			[
+				"di",
+				"dividewidth"
+			],
+			[
+				"row",
+				"rowinfo"
+			],
+			[
+				"blo",
+				"blockobject"
+			],
+			[
+				"he",
+				"heights"
+			],
+			[
+				"awesom",
+				"awesomecontent"
+			],
+			[
+				"dyn",
+				"dynamicrow"
+			],
+			[
+				"light",
+				"lightblue"
+			],
+			[
+				"lef",
+				"leftfun"
+			],
+			[
+				"rig",
+				"rightfun"
+			],
+			[
+				"se",
+				"selected"
+			],
+			[
+				"in",
+				"intoolbox"
+			],
+			[
+				"left",
+				"left"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"f",
+				":first-of-type"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"addsub",
+				"addsubcol"
+			],
+			[
+				"add",
+				"addsubrow"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"su",
+				"subrow"
+			],
+			[
+				"un",
+				"universalid"
+			],
+			[
+				"editblockc",
+				"editblockcomment"
+			],
+			[
+				"en",
+				"enteredText"
+			],
+			[
+				"html",
+				"htmlcode"
+			],
+			[
+				"h",
+				"htmlcode"
+			],
+			[
+				"fi",
+				"fixedblockoptions"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"wi",
+				"widtharray"
+			],
+			[
+				"as",
+				"awesome"
+			],
+			[
+				"all",
+				"alltheblocks"
+			],
+			[
+				"block",
+				"blocknumber"
+			],
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"ge",
+				"generatecode"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"th",
+				"therowid"
+			],
+			[
+				"gri",
+				"gridpercent"
+			],
+			[
+				"main",
+				"mainwidth"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"editblock",
+				"editblockcomment"
+			],
+			[
+				"edi",
+				"editblockclass"
+			],
+			[
+				"temp",
+				"tempobject"
+			],
+			[
+				"ed",
+				"editblockid"
+			],
+			[
+				"new",
+				"newwidth"
+			],
+			[
+				"n",
+				"newwidthinpercent"
+			],
+			[
+				"dynami",
+				"dynamicblock"
+			],
+			[
+				"b",
+				"bodywidth"
+			],
+			[
+				"pre",
+				"prevblockwidth"
+			],
+			[
+				"body",
+				"bodywidth"
+			],
+			[
+				"fo",
+				"forresizewidth"
+			],
+			[
+				"for",
+				"forresizewidth"
+			],
+			[
+				"w",
+				"w-resize"
+			],
+			[
+				"dy",
+				"dynamicblock"
+			],
+			[
+				"s",
+				"selectedrow"
+			],
+			[
+				"bu",
+				"builder"
+			],
+			[
+				"jquer",
+				"jQuerin"
+			],
+			[
+				"ful",
+				"fullyhidden"
+			],
+			[
+				"dynam",
+				"dynamicblock"
+			],
+			[
+				"ma",
+				"mainwidth"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"nu",
+				"number"
+			],
+			[
+				"com",
+				"comments_of_blocks"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"awe",
+				"awesomecontent"
+			],
+			[
+				"cl",
+				"classes_of_blocks"
+			],
+			[
+				"id",
+				"ids_of_blocks"
+			],
+			[
+				"orw",
+				"classes_of_rows"
+			],
+			[
+				"rowc",
+				"rowcomments"
+			],
+			[
+				"ids",
+				"ids_of_rows"
+			],
+			[
+				"blc",
+				"block"
+			],
+			[
+				"sli",
+				"slideDown"
+			],
+			[
+				"code",
+				"codebutton"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"slid",
+				"slideUp"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"hi",
+				"hide"
+			],
+			[
+				"ro",
+				"rowoptions"
+			],
+			[
+				"med",
+				"mediaqueries"
+			],
+			[
+				"sp",
+				"span_2_of_3"
+			],
+			[
+				"me",
+				"mediaqueries"
+			],
+			[
+				"m",
+				"mainarray"
+			],
+			[
+				"awesome",
+				"awesomecss"
+			],
+			[
+				"full",
+				"fullcsscode"
+			],
+			[
+				"awes",
+				"awesomecss"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"bloc",
+				"block_ka_html"
+			],
+			[
+				"dsi",
+				"display"
+			],
+			[
+				"head",
+				"headerarea"
+			],
+			[
+				"dis",
+				"display	display: common-types"
+			],
+			[
+				"color",
+				"color	color: name"
+			],
+			[
+				"li",
+				"list	list-style-type: numeric"
+			],
+			[
+				"not",
+				"nothidden"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "builderfull.html",
+			"settings":
+			{
+				"buffer_size": 31941,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "builder.html",
+			"settings":
+			{
+				"buffer_size": 18137,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "readme.md",
+			"settings":
+			{
+				"buffer_size": 1278,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/C.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"d",
+				"Set Syntax: Diff"
+			],
+			[
+				"",
+				"Set Syntax: Graphviz (DOT)"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Function"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 656.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/H/jQuerin-grid-builder/builder/jquery.aSimpleTour.js",
+		"/H/jQuerin-grid-builder/builderfull.html",
+		"/H/jQuerin-grid-builder/readme.md",
+		"/H/jQuerin-grid-builder/builder/index.html",
+		"/H/jQuerin-grid-builder/builder/builder.css",
+		"/H/jQuerin-grid-builder/builder.html",
+		"/H/jQuerin-grid-builder/buildertest.html",
+		"/H/jQuer.in/link.txt",
+		"/H/imp-info/tosend.txt",
+		"/H/style.css",
+		"/H/test.html",
+		"/H/imp-info/Pan.txt",
+		"/H/imp-info/jquery.in.txt",
+		"/C/Users/Kanakiya/Downloads/builder.css",
+		"/C/Users/Kanakiya/Downloads/builderfull.css",
+		"/C/Users/Kanakiya/Downloads/builderfull.html",
+		"/H/GridBuilder/GridBuilder/builderfull.html",
+		"/H/GridBuilder/GridBuilder/builder/builder.css",
+		"/H/cloudmine.js",
+		"/H/GridBuilder/GridBuilder/builder/scroll.css",
+		"/H/GridBuilder/GridBuilder/style.css",
+		"/C/Users/Kanakiya/AppData/Local/Temp/Temp1_jquery.qtip-nightly.custom.zip/nightly-459db3a04566f70d4710b52ebe4213c31342396829/jquery.qtip.min.css",
+		"/H/jQuer.in/header.php",
+		"/C/Users/Kanakiya/jayk/app/controllers/home_controller.rb",
+		"/C/Users/Kanakiya/jayk/config/routes.rb",
+		"/H/GridBuilder/GridBuilder/test.html",
+		"/C/Users/Kanakiya/Desktop/builderfull.html",
+		"/H/fromdropbox.html",
+		"/C/Users/Kanakiya/AppData/Local/Temp/Temp1_builder.zip/builder/builder.css",
+		"/H/GridBuilder/GridBuilder/builder/normalize.css",
+		"/H/GridBuilder/GridBuilder/builder/apprise-1.5.full.js",
+		"/H/GridBuilder/GridBuilder/builder/jquery.editinplace.js",
+		"/H/GridBuilder/GridBuilder/builder.html",
+		"/H/GridBuilder/GridBuilder/builder/jquery-ui.min.js",
+		"/H/GridBuilder/GridBuilder/GridBuilder.all/builder-with-width.html",
+		"/H/GridBuilder/GridBuilder/GridBuilder.all/builder (c4's conflicted copy 2012-07-11).html",
+		"/H/GridBuilder/GridBuilder/GridBuilder.all/width.js",
+		"/G/builder/builder.css",
+		"/G/builder-with-width.html",
+		"/H/GridBuilder/builder-with-width.html",
+		"/H/GridBuilder/builder.html",
+		"/H/GridBuilder/builder/builder.css",
+		"/H/GridBuilder/check.swf.html",
+		"/H/GridBuilder/builder/apprise.css",
+		"/H/GridBuilder/builderfull.html",
+		"/H/jQuer.in/list.txt",
+		"/H/XML-sitemap/documentation.html",
+		"/H/xml/students.xml",
+		"/H/xampp/htdocs/xampp/projects/XML-sitemap/sitemap.xml",
+		"/H/xampp/htdocs/xampp/projects/XML-sitemap/index.html",
+		"/H/xampp/htdocs/xampp/projects/XML-sitemap/readXML.js",
+		"/H/xml/index.html",
+		"/H/XML-sitemap/style.css",
+		"/H/XML-sitemap/xml.html",
+		"/H/XML-sitemap/xml.xml",
+		"/H/XML-sitemap/index.html",
+		"/H/jQuer.in/by",
+		"/H/GridBuilder/builder/builderfull.css",
+		"/H/GridBuilder/test.html",
+		"/H/xampp/htdocs/xampp/projects/syntaxhighlighter_3.0.83/syntaxhighlighter_3.0.83/index.html",
+		"/H/GridBuilder/tinymce/examples/tinyMCE.html",
+		"/H/GridBuilder/.htaccess",
+		"/H/GridBuilder/light.css",
+		"/H/GridBuilder/tests/test1.html",
+		"/H/GridBuilder/tests/style.css",
+		"/H/GridBuilder/tests/test1.hml.html",
+		"/H/GridBuilder/css/4cols.css",
+		"/H/GridBuilder/css/responsivegridsystem.css",
+		"/H/GridBuilder/css/col.css",
+		"/H/GridBuilder/tinymce/examples/index.html",
+		"/H/jQuer.in/mobile.css",
+		"/H/jQuer.in/.htaccess",
+		"/H/jQuer.in/light.css",
+		"/H/wp-config.php",
+		"/H/GridBuilder/css/9cols.css",
+		"/H/GridBuilder/css/7cols.css",
+		"/H/GridBuilder/css/8cols.css",
+		"/H/GridBuilder/css/6cols.css",
+		"/H/GridBuilder/css/5cols.css",
+		"/H/GridBuilder/css/3cols.css",
+		"/H/GridBuilder/responsivegridsystem.html",
+		"/H/GridBuilder/css/2cols.css",
+		"/H/GridBuilder/css/html5reset.css",
+		"/H/GridBuilder/html5_boilerplate/css/style.css",
+		"/H/GridBuilder/html5_boilerplate/index.html",
+		"/H/boilerplate.html",
+		"/H/xampp/htdocs/xampp/projects/Kapol/sample_of_front.html",
+		"/H/xampp/htdocs/xampp/projects/Kapol/livesearch.html",
+		"/H/xampp/htdocs/xampp/projects/Kapol/kapol_by_row.json",
+		"/H/jqueryplug.in.txt",
+		"/H/xampp/htdocs/xampp/projects/Kapol/kapolformatted.json",
+		"/H/Kapol/kapol_by_row.json",
+		"/H/Kapol/kapolformatted.json",
+		"/H/Kapol/kapolfinal.json",
+		"/H/xampp/htdocs/xampp/projects/Kapol/kapol.html",
+		"/H/Kapol/kapol.html",
+		"/H/xampp/htdocs/xampp/projects/Kapol/kapol.json",
+		"/H/Kapol/kapol2com.csv",
+		"/H/Kapol/kapol.json",
+		"/C/Users/Kanakiya/AppData/Roaming/Sublime Text 2/Packages/User/jquery.sublime-snippet",
+		"/C/Users/Kanakiya/Desktop/kapolcom.csv",
+		"/H/wordpress-3.4/wordpress/wp-config.php",
+		"/H/html5 boilerplate/index.html",
+		"/H/html5 boilerplate/plugin.css",
+		"/C/Users/Kanakiya/AppData/Local/Temp/Temp1_my_daily_wallpaper.zip/readme.txt",
+		"/H/wordpress-3.4/wordpress/wp-blog-header.php",
+		"/H/wordpress-3.4/wordpress/wp-load.php",
+		"/H/wordpress-3.4/wordpress/index.php",
+		"/C/Users/Kanakiya/AppData/Local/Temp/Temp1_gridly-1.1.zip/gridly/readme.txt",
+		"/C/Users/Kanakiya/Downloads/Search Engine Optimization (SEO) Secrets/Readme first.txt",
+		"/C/Users/Kanakiya/AppData/Local/Google/Chrome/User Data/Default/Extensions/noojglkidnpfjbincgijbaiedldjfbhh/2.2.1_0/data/chrome/buffer-chrome-port-wrapper.js",
+		"/C/Users/Kanakiya/AppData/Local/Google/Chrome/User Data/Default/Extensions/noojglkidnpfjbincgijbaiedldjfbhh/2.2.1_0/buffer.html",
+		"/C/Users/Kanakiya/AppData/Local/Google/Chrome/User Data/Default/Extensions/noojglkidnpfjbincgijbaiedldjfbhh/2.2.1_0/data/main.js",
+		"/C/Users/Kanakiya/AppData/Local/Google/Chrome/User Data/Default/Extensions/noojglkidnpfjbincgijbaiedldjfbhh/2.2.1_0/manifest.json",
+		"/H/Angry_Birds/manifest.json",
+		"/H/CSSdivgen/readme-before-use.txt",
+		"/H/30 days to learn jQuery/lesson-11/index.html",
+		"/C/Users/Kanakiya/Downloads/DivFix++_v0.34/docs/ReadMe.txt",
+		"/H/30 days to learn jQuery/lesson-7/index (2).html",
+		"/H/html5 boilerplate/triangleindex.html",
+		"/H/html5 boilerplate/triangle.css",
+		"/H/html5 boilerplate/plugin.html",
+		"/H/html5 boilerplate/js/plugins.js",
+		"/H/html5 boilerplate/js/script.js",
+		"/C/Users/Kanakiya/AppData/Local/Temp/Temp1_project.zip/fonts_in_use.txt",
+		"/H/30 days to learn jQuery/lesson-14/slider2.js",
+		"/H/sidengo/index.html",
+		"/H/filmroll/film.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"generatecode",
+			"Paintbrush",
+			"Caman",
+			"Amplify",
+			"children",
+			"lightblue",
+			"green",
+			"blue",
+			"Derby",
+			"Amplify-js",
+			"red",
+			"yellow",
+			"green",
+			"blue",
+			"#000000",
+			"a",
+			"21",
+			"#codebutton",
+			"showtheheight",
+			"$this",
+			"generatecode",
+			"5px",
+			"yellow",
+			"visi",
+			"these ",
+			"whitesmoke",
+			"3px",
+			"4px",
+			"#000000",
+			"fullyhidden",
+			"$beforeselected",
+			"fullyhidden",
+			"theblockid",
+			"number",
+			"blockid",
+			"theblockcomment",
+			"generatecode",
+			"8px",
+			"text-align",
+			"darkgray",
+			"!@",
+			"div",
+			"!@",
+			"large",
+			"animate",
+			"refresh",
+			"intoolbox",
+			"deleteleft",
+			"intoo",
+			"right",
+			"NVD3",
+			"X-Tag",
+			"Photon 3D engine",
+			"Annotar",
+			"Amplify-js",
+			"0.6",
+			"42px",
+			"1",
+			"32",
+			"span",
+			"loop",
+			".dynamicblo",
+			"hidden",
+			"overflow",
+			"19px",
+			"addsubrow",
+			"subcol",
+			"awesomecontent",
+			"data_divide",
+			"dividewidth",
+			"addsubrow",
+			"generatecode",
+			"refresh",
+			"addsubrow",
+			"jquery",
+			"Amplify-js",
+			"addblock.jpg",
+			"modalclose",
+			"idrownumber",
+			"blockinfo",
+			"backgroundcolor",
+			"background",
+			"backgroundcolor",
+			".height",
+			"therowclass",
+			"therowid",
+			"block_ka_html",
+			"theblockcomment",
+			"Amplify",
+			"refresh",
+			"Resumable",
+			"fullyhidden",
+			"Sugar",
+			"Amplify",
+			"button",
+			"br",
+			";}",
+			"color",
+			"font-family",
+			"button",
+			"b",
+			"p",
+			"button",
+			"right",
+			"yellow",
+			"subcol",
+			"addsubcol",
+			"addblock",
+			"addsubrow",
+			"div",
+			"subrow",
+			"button",
+			"div",
+			"subrow",
+			"addblock",
+			"subrow",
+			"thedatanumber",
+			"inview",
+			"#dynamic",
+			"black",
+			"h5",
+			"logo",
+			"clear",
+			"Amplify-js",
+			"jStat",
+			"jquery.my",
+			"jRibbble",
+			"Doubletake"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"p",
+			"self",
+			"\"number\":null,",
+			"mobile\":null,",
+			"number\":null,",
+			"email",
+			"head_relation",
+			"dob",
+			"srno",
+			"left",
+			"windowsdiv",
+			"windows",
+			"inviewleft",
+			"",
+			"windows",
+			"</div>",
+			"<div>",
+			"\"></div></li>",
+			"<li><div><img",
+			"top:300",
+			"left:225",
+			"",
+			"225",
+			"300",
+			".png\" width=\"300\" height=\"225\"",
+			".png",
+			"/sliding/slide",
+			"slide",
+			".jpg",
+			"slide_caption",
+			"slide",
+			" ",
+			",250,",
+			"$(this).data('k',temp);",
+			"nav",
+			"Kapol",
+			"kapol",
+			"kapols",
+			"inserts",
+			"",
+			"<td class=\"\">",
+			"page",
+			"000webhost",
+			"+changex,y",
+			"jpg",
+			"posy",
+			"posx",
+			"selecrBrick",
+			"bricks",
+			"ctx",
+			"mosaic-backdrop",
+			"h5",
+			"h4"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "builderfull.html",
+					"settings":
+					{
+						"buffer_size": 31941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7898,
+								31915
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3543.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "builder.html",
+					"settings":
+					{
+						"buffer_size": 18137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8188,
+								8188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3441.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "readme.md",
+					"settings":
+					{
+						"buffer_size": 1278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								332,
+								332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 148.0
+	},
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/H/online-exam/online_exam.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 147.0,
+	"status_bar_visible": true
+}
